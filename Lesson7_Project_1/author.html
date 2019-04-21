@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>Author page for assignment 4</title>
-        <style>body {background-color: white</style>
+      
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-navbar.css">
     </head>
     <!-- Author: Jack H. Miller | Date: March 3rd 2019-->
     
@@ -12,15 +13,22 @@
         <div id="header">
             <img src="images/Learn to code image.jpg" width="1200" height="275" alt="Learn to code header image">
         
-        <h2><Strong>Harness That Imagination With Coding!</font></Strong></h2>
+        <h2><Strong>Harness the Code!</font></Strong></h2>
+        <div id = "navbar">
+             <!-- <a href="index.html">Overview</a> | <a href="media.html">Media</a> | <a href="author.html">Author</a> --> <!-- Realtive link Example -->
+              	<ul  id="menu">
+              		<li><a href="index.html" class="button">Overview</a></li>
+              		<li><a href="media.html" class="button">Media</a></li>
+                 	<li><a href="author.html" class="button selected">Author</a></li>
+              	</ul>
+        </div><!-- End Navbar -->  
         
-        <a href="index.html">Overview</a> | <a href="media.html">Media</a> | <a href="author.html">Author</a> <!-- relative links -->
         </div> <!--End header -->
         
         <div id="content"><h2><em>About the Author</em></h2>
         <p><i>Jack H. Miller</i></p>
         <p>Jack Miller is a sophomore majoring ICT at Florida State University, he has taken courses in Unix, C++, Java, html, CSS, Javascript, and NoSQL. This website is to showcase the concepts he has<br> been learning in html and CSS. Below are the references used for this site.</p>
-        <img src="images/author.jpg" width="375" height="550" alt="Picture of author">
+        <img id = "author" src="images/author.jpg" width="375" height="550" alt="Picture of author">
         <div id="sidebar">
             <blockquote>
                 Take positive care of your mind, and it would surely take positive care of your life.<br>Edmond Mbiaka
