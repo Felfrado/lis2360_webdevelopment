@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* CSS Document created by Christy Chatmon, Spring 2019*/
+
+body {
+	font-family: Geneva, "Courier New", Impact, sans-serif;
+	font-size: 13px;
+	line-height: 1.6em;
+	color: #FFFFFF;
+	background-color: #333333;
+	padding: 0 40px;
+	margin: 0;
+}
+
+/* Layout */
+#container{
+	width: 1150px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+#header{
+	width: 100%;
+	background-color: #333333;
+	border-bottom: 1px solid #ff3333;
+	padding-bottom: 40px;
+	
+}
+#content{
+	width: 100%;
+	padding-bottom: 40px;
+	float:left;
+}
+#content img{
+	/* height:400px; */
+}
+#footer{
+	width: 100%;
+	background-color: #333333;
+	border-top: 1px solid #ff3333; /* Border top for some reason adding into the header's border bottom */
+	padding:5px;
+}
+#footer p{
+	maring:0; /* This fixed the grey bar at the footer but made the <hr> tags to dissapear, not sure how to fix */
+}
+#sidebar{
+	width:300px;
+	float:right;
+	margin-bottom: 20px;
+	background: #4d4d4d;
+	border:1px solid #47AED4;
+	border-radius: 5px;
+}
+#sidebar p{
+	padding: 10px;
+	
+}
+#author{
+	
+}
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.1em;
+	color: #CCCCCC;
+}
+h1 {
+	font-size: 24px;
+	padding: 4px 0;
+	font-variant: small-caps;
+	letter-spacing: .5em;
+	line-height: 2em;
+}
+h2 {
+	font-size: 20px;
+	padding: 6px;
+	font-variant: small-caps;
+	letter-spacing: 0.5em;
+	background-color: #BA4A84;
+	border-radius: 5px; /* Rounded edges; more pleasing to look at*/
+}
+h3 {
+	font-size: 17px;
+	letter-spacing: 0.5em;
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #9B9744;
+	padding: 4px 0;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+/* link styles ---------------------------- */
+a:link {
+	font-weight: bold;
+	color: #47AED4;
+	text-decoration: none;
+}
+a:visited {
+	font-weight: bold;
+	color: #8A56D4;
+	text-decoration: none;
+}
+a:hover {
+	color: #56D1FF;
+}
+
+/* list styles ----------------------------- */
+ul li {
+	margin-left: 12px;
+}
+ol {
+	margin-left: 14px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	border: solid #BA4A84 1px;
+}
+td {
+	padding: 15px;
+	border-bottom:  #BA4A84 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #999938;
+	text-align: center;
+	padding: 6px;
+	border-bottom: solid #BA4A84 1px;
+}
+tr:hover {background-color: #4d4d4d;}
+
+
+/* border styles ------------------------------------ */
+hr {
+	border: 0.5px solid #47AED4;
+  	border-radius: 5px;
+}
+
+img {
+	border: solid #BA4A84 1px;
+
+}
+
+iframe {
+	border: solid #BA4A84 1px;
+	padding: 8px;
+	margin: 8px;
+}
