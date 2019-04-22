@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------------------- HTML TAG STYLES ----------------------------- */
+
+body {
+  margin: 0px; /* always zero out defaul browser margins and padding */
+  padding: 0px;
+  color: #333;
+  font-family: Geneva, "Courier New", Impact, sans-serif;
+}
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+h1 {
+  padding: 20px 0;
+}
+h4 {
+  padding: 20px 0;
+  font-weight: bold;
+}
+table {
+	border: solid #6297F9 1px;
+	border-collapse:collapse;
+}
+td {
+	padding: 6px;
+	border: solid #6297F9 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #6297F9;
+	text-align: center;
+	padding: 6px;
+	border: solid #6297F9 1px;
+}
+a:link {
+	color: #6297F9;
+}
+a:visited {
+	color: #6297F9;
+}
+a:hover {
+	color: #4578DF;
+	text-decoration: none;
+}
+
+/* -------------------------- PAGE SECTIONS ---------------------------- */
+/* Visual sections of page are defined below in order of presentation */  
+
+#splash {
+  background: url(images/ai.jpg) no-repeat center top fixed;
+  background-size: cover;  
+	height: 1000px; /* dictates a taller section for title page allowing the background image to be seen */
+	
+}
+/* Do noty dictate height for remaining sections since the content will dictate heights. */
+#overview {
+	padding: 40px 0 60px 0; /* top padding provides space for nav bar, bottom padding for asthetics */	
+  background-color: #333;
+	color: #fff;
+}
+
+#media {
+	padding: 40px 0 60px 0;	
+  background: url(images/coaching-coders.jpg) no-repeat center top fixed;
+	color: #fff;
+}
+
+#author {
+	padding: 40px 0 40px;	
+  background-color: #333;
+	color: #222;
+}
+
+#footer{
+  	background-color: #595959;
+  	color: #fff;
+  	padding: 5px 0;
+
+}
+
+/* ---------------- CONTAINER STYLES ----------------- */
+/* Containers are used to keep the page content within bounds centered in the browser window. */
+.container {
+  width: 960px; /* static width container always stays at this width no matter what the window size */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.half_container { /* provides a two column presentation */
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+/* ----------------- NAVIGATION BAR STYLES -------------------*/ 
+
+#navbar{
+	position: fixed; /* navbar should always be shown even when page is scrolled */
+	top: 0;
+	width: 100%;
+	height: 54px;
+	background-color: rgba(115, 115, 115, 0.8); 
+}	
+/* horizontal menu bars are typically created using a styled unordered list. Here's how! */
+ul#menu {
+	list-style: none; /* eliminates bullets */
+	/* adjust padding top to adjust nav bar vertical position */
+	padding-top: 0px;
+} 
+ul#menu li {
+	float: left; /* changes list from vertical to horizontal */
+	padding-bottom: 20px;
+} 
+ul#menu li a.button {
+	font-size: 16px;
+	text-decoration: none;
+	/* this padding defines the size of the buttons */
+	padding: 20px 100px 20px 100px; 
+}
+/* change button color when mouse hovers over */
+ul#menu li a.button:hover {
+	background-color: rgba(42, 188, 238, 0.1);
+}  
+
+/* ---------------- TITLE PAGE STYLES ------------------- */
+
+#title-page{
+  width: 100%;
+  padding-top: 30px; /* provides a lot of space above title to view the background image */
+  color: #fff;
+  text-align: right;
+}
+#title-page h1 {
+  font-family: Geneva, "Courier New", Impact, sans-serif; /* Amaranth is a Google Font - see link in head of index.html */
+  font-size: 80px; 	
+  text-shadow: 3px 3px #000; /* Shadow helps text to stand out from background */
+  color:#fff;
+}
+#title-page h3 {
+  font-size: 1em;
+  font-style: italic;
+  margin: 0 40px;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px #000;
+  color:#fff;
+}
+#header{
+	width: 100%;
+	background-color: #333333;
+	border-bottom: 1px solid #ff3333;
+	padding-bottom: 40px;
+	
+}
+#sidebar{
+	width:300px;
+	float:right;
+	margin-bottom: 20px;
+	background: rgba(115, 115, 115, 0.8);
+	border:1px solid #47AED4;
+	border-radius: 5px;
+	color: #fff;
+}
+#sidebar p{
+	padding: 10px;
+	
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.1em;
+	color: #CCCCCC;
+}
+h1 {
+	font-size: 24px;
+	padding: 40px 0;
+	font-variant: small-caps;
+	letter-spacing: .5em;
+	line-height: 2em;
+}
+h2 {
+	font-size: 20px;
+	padding: 6px;
+	font-variant: small-caps;
+	letter-spacing: 0.5em;
+	background-color: #BA4A84;
+	border-radius: 5px; /* Rounded edges; more pleasing to look at*/
+}
+h3 {
+	font-size: 17px;
+	letter-spacing: 0.5em;
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #9B9744;
+	padding: 4px 0;
+	font-variant: small-caps;
+	font-style: italic;
+	color: #fff;
+}
+
+/* ------------------- FOOTER CREDITS --------------------- */
+
+#credits {
+  text-align: center;	
+}
+#credits table{      
+  margin: 0 auto;		/* centers the color palette table */
+}
+#credits p {
+  font-size: .8em;
+  margin: 10px 0;
+}
+
+/* ---------------------- MISC -----------------------------*/
+
+.fltright{
+	float:right;
+	margin: 20px;
+}
+.fltleft{
+	float:left;
+	margin: 20px 20px 20px 0;
+}
+hr {
+	border: 0.5px solid #47AED4;
+  	border-radius: 5px;
+}
+#video{
+	border:2.5px solid #47AED4;
+	border-radius: 4px;
+}
+#authorpic{
+	border:1px solid #47AED4;
+	border-radius: 8px;
+}
+ 
